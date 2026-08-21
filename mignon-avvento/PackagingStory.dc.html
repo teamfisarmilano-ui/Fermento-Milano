@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Jost:wght@300;400;500&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Jost', 'Avenir Next', sans-serif; }
+    a { color: #F6D01A; } a:hover { color: #F08019; }
+  </style>
+</helmet>
+
+<div style="width: 1080px; height: 1920px; background: #14100E; color: #F3ECE2; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; padding: 150px 80px 130px; box-sizing: border-box;">
+
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 34px; text-align: center;">
+    <div style="font-size: 20px; letter-spacing: 0.32em; text-transform: uppercase; color: #F08019;">2 &middot; Arrivo a casa</div>
+    <div style="font-family: 'Bodoni Moda', Georgia, serif; font-size: 96px; line-height: 1.04; text-wrap: balance;">
+      Ha suonato<br>il corriere
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: center;">
+    <svg width="620" height="560" viewBox="0 0 310 280" fill="none">
+      <rect x="18" y="66" width="274" height="196" fill="#221A16" stroke="#4C423A" stroke-width="1.5"/>
+      <path d="M18 66 L155 8 L292 66" stroke="#4C423A" stroke-width="1.5" fill="#1A1411"/>
+      <g stroke-width="2">
+        <path d="M46 100h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#E42313"/>
+        <path d="M92 100h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#F08019"/>
+        <path d="M138 100h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#7A2E8E"/>
+        <path d="M184 100h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#F6D01A"/>
+        <path d="M230 100h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#E42313"/>
+        <path d="M46 180h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#F6D01A"/>
+        <path d="M92 180h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#7A2E8E"/>
+        <path d="M138 180h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#E42313"/>
+        <path d="M184 180h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#F08019"/>
+        <path d="M230 180h9v11c0 4 3.5 5.5 3.5 9.5v38c0 2.2-1.8 4-4 4h-8c-2.2 0-4-1.8-4-4v-38c0-4 3.5-5.5 3.5-9.5v-11Z" stroke="#F6D01A"/>
+      </g>
+    </svg>
+  </div>
+
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 46px; text-align: center;">
+    <div style="font-size: 34px; font-weight: 300; line-height: 1.5; max-width: 780px; color: #C9BEB1;">
+      Dentro: 24 mignon in piedi, numerate, ognuna con la sua scheda. Nient'altro da fare fino al 1&deg; dicembre.
+    </div>
+    <div style="border: 1.5px solid #F6D01A; color: #F6D01A; padding: 26px 60px; font-size: 28px; letter-spacing: 0.2em; text-transform: uppercase;">
+      Ordina entro il [DATA]
+    </div>
+    <div style="font-size: 22px; letter-spacing: 0.2em; text-transform: uppercase; color: #6F655B;">mignonexperience.com</div>
+  </div>
+
+</div>
+</x-dc>
+<script data-dc-script data-props='{"$preview":{"width":1080,"height":1920}}'>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>

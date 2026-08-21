@@ -1,0 +1,35 @@
+{
+  "pages": [
+    { "id": "page-1", "name": "Direzioni" },
+    { "id": "page-2", "name": "1 · Composizione" },
+    { "id": "page-3", "name": "2 · Arrivo a casa" },
+    { "id": "page-4", "name": "3 · Relax" },
+    { "id": "page-5", "name": "4 · Idee" }
+  ],
+  "artboards": [
+    { "file": "Main.dc.html", "page": "page-1", "title": "Direzione A — Notte di dicembre", "x": 0, "y": 0, "w": 1080, "h": 1350 },
+    { "file": "DirezioneB.dc.html", "page": "page-1", "title": "Direzione B — Carta & colore", "x": 1180, "y": 0, "w": 1080, "h": 1350 },
+    { "file": "DirezioneC.dc.html", "page": "page-1", "title": "Direzione C — Slow December", "x": 2360, "y": 0, "w": 1080, "h": 1350 },
+
+    { "file": "Composizione.dc.html", "page": "page-2", "title": "Le 24 caselle", "x": 0, "y": 0, "w": 1080, "h": 1350 },
+    { "file": "ComposizioneDettaglio.dc.html", "page": "page-2", "title": "Dentro una casella", "x": 1180, "y": 0, "w": 1080, "h": 1350 },
+
+    { "file": "Packaging.dc.html", "page": "page-3", "title": "Tre gesti", "x": 0, "y": 0, "w": 1080, "h": 1350 },
+    { "file": "PackagingStory.dc.html", "page": "page-3", "title": "Story 9:16", "x": 1180, "y": 0, "w": 1080, "h": 1920 },
+
+    { "file": "Relax.dc.html", "page": "page-4", "title": "Quattro sere", "x": 0, "y": 0, "w": 1080, "h": 1350 },
+    { "file": "RelaxStory.dc.html", "page": "page-4", "title": "Story 9:16", "x": 1180, "y": 0, "w": 1080, "h": 1920 },
+
+    { "file": "Idee.dc.html", "page": "page-5", "title": "Sei idee", "x": 0, "y": 0, "w": 1440, "h": 1080 },
+    { "file": "IdeaCasellaDelGiorno.dc.html", "page": "page-5", "title": "Template post quotidiano", "x": 1540, "y": 0, "w": 1080, "h": 1350 }
+  ],
+  "annotations": [
+    { "id": "nota-direzioni", "page": "page-1", "x": 0, "y": -230, "w": 900, "text": "Tre direzioni diverse per lo stesso prodotto.\nA — editoriale, notturna, premium.\nB — chiara, retail, molto riconoscibile a feed.\nC — silenziosa, da regalo.\nScegline una: le sezioni 1-4 sono sviluppate nella direzione A." },
+    { "id": "nota-colori", "page": "page-1", "x": 2360, "y": -230, "w": 640, "text": "I 4 colori sono ricavati a occhio dal logo Mignon Experience.\nSostituiscili con gli esadecimali ufficiali quando li hai." },
+    { "id": "nota-composizione", "page": "page-2", "x": 0, "y": -190, "w": 820, "text": "Il colore della casella = tipologia di vino. Serve solo se la ripartizione bianchi/rossi/bollicine/dolci è decisa: altrimenti tieni tutte le caselle di un colore solo." },
+    { "id": "nota-packaging", "page": "page-3", "x": 0, "y": -190, "w": 820, "text": "Illustrazioni vettoriali, non mockup fotografici: servono per far vedere la sequenza. Con le foto del cofanetto reale queste tre tavole diventano tre scatti." },
+    { "id": "nota-relax", "page": "page-4", "x": 0, "y": -190, "w": 820, "text": "Nessuna situazione di gruppo o di festa: il formato mignon parla della sera da soli o in due. È la differenza vera rispetto ai calendari dei competitor." },
+    { "id": "nota-idee", "page": "page-5", "x": 0, "y": -230, "w": 900, "text": "Sei idee che usano cose già esistenti (enoteca online, Fermento NEXT/PRIME, mascotte Tino, rete Ho.Re.Ca).\nNessun accordo o prezzo è stato verificato: sono proposte da portare al tavolo." }
+  ],
+  "launch": { "view": "canvas", "page": "page-1" }
+}
