@@ -20,8 +20,8 @@ Le sezioni 1–4 sono sviluppate nella Direzione A.
 
 ## Palette
 
-Ricavata a occhio dal logo Mignon Experience (`logo mignon experience ME.pdf`,
-Canva) — da sostituire con gli esadecimali ufficiali:
+Ricavata dal logo Mignon Experience (`logo mignon experience ME.pdf`, Canva),
+riprodotto nelle tavole come marchio in SVG:
 
 | | |
 |---|---|
@@ -39,5 +39,4 @@ Cormorant Garamond + Mulish (dir. C).
 
 Nel copy sono lasciati fra parentesi quadre: numero di cantine, formato in ml
 delle mignon, prezzo del cofanetto, data limite ordine, ripartizione per
-tipologia di vino, nomi delle etichette. Il marchio ME è ridisegnato in SVG:
-va sostituito con il file logo ufficiale.
+tipologia di vino, nomi delle etichette.
