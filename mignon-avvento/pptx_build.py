@@ -93,3 +93,18 @@ def pic(s, path, x, y, h):
 
 def rule(s, x, y, w, color, thick=1):
     return box(s, x, y, w, thick, fill=color)
+
+
+MONT = "Montserrat"
+
+
+def lockup(s, x, y, bh, name, sub, nc, sc, align="l"):
+    """Marchio: bottiglie originali come immagine, logotipo come testo vero."""
+    w = pic(s, "bottiglie.png", x, y, bh).width / PX
+    tw = max(w, name * 9.2)
+    tx = x if align == "l" else x - (tw - w) / 2
+    txt(s, tx, y + bh + round(bh * 0.13), tw, name * 1.4, "Mignon Experience", name, MONT,
+        nc, align, bold=True, leading=1.05)
+    txt(s, tx, y + bh + round(bh * 0.13) + name * 1.35, tw, sub * 2, "LE PIÙ PICCOLE", sub,
+        MONT, sc, align, spacing=sub * 0.3)
+    return w

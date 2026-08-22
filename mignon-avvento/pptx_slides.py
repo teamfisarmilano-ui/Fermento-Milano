@@ -8,7 +8,7 @@ def eyebrow(s, x, y, text, color, size=16, w=700, align="l"):
 
 # --- Main: Direzione A --------------------------------------------------
 s = page(post, INK)
-pic(s, "logo-chiaro.png", 72, 72, 140)
+lockup(s, 72, 66, 112, 27, 11, PAPER, "A2968A")
 txt(s, 600, 76, 408, 70, ["DIREZIONE A", "NOTTE DI DICEMBRE"], 16, SANS, "8E8378", "r",
     spacing=3.5, leading=1.9)
 eyebrow(s, 72, 362, "Calendario dell'Avvento", ORANGE, 17)
@@ -34,7 +34,7 @@ txt(s, 508, 1258, 500, 30, "1 — 24 DICEMBRE", 18, SANS, MUTED_D, "r", spacing=
 
 # --- Direzione B --------------------------------------------------------
 s = page(post, CREAM)
-pic(s, "logo.png", 56, 56, 104)
+lockup(s, 56, 50, 88, 21, 9, "4A4A52", "8A8A92")
 txt(s, 600, 60, 424, 70, ["DIREZIONE B", "CARTA & COLORE"], 15, GROTESK, "8A8177", "r",
     bold=True, spacing=3, leading=1.8)
 txt(s, 56, 176, 900, 320,
@@ -62,7 +62,7 @@ txt(s, 500, 1262, 524, 30, "MIGNONEXPERIENCE.COM", 17, GROTESK, "8A8177", "r", b
 
 # --- Direzione C --------------------------------------------------------
 s = page(post, "E9E3D9")
-pic(s, "logo.png", (1080 - 197) / 2, 96, 168)
+lockup(s, 540, 96, 150, 36, 15, "4A4A52", "8A8A92", "c")
 txt(s, 96, 380, 888, 260,
     ["Dicembre,", [("un sorso alla volta", {"italic": True})]],
     104, SERIF_C, "2E2A26", "c", leading=1.06)
@@ -206,7 +206,7 @@ for i, (k, v) in enumerate([("VITIGNO", "[Vitigno]"), ("SERVIZIO", "[XX]°C"),
 txt(s, 368, 700, 648, 120, "“[Una riga del produttore su questo vino.]”", 34, SERIF, YELLOW,
     italic=True, leading=1.4)
 rule(s, 64, 1216, 952, "3A322C")
-pic(s, "logo-chiaro.png", 64, 1240, 76)
+lockup(s, 64, 1216, 60, 17, 8, PAPER, "A2968A")
 txt(s, 500, 1264, 516, 30, "LA BOTTIGLIA INTERA → IN ENOTECA", 18, SANS, MUTED_D, "r", spacing=2.9)
 
 post.save("export/tavole-post-1080x1350.pptx")
@@ -243,7 +243,7 @@ txt(s, 140, 960, 800, 130,
     32, SANS, DIM_D, "c", leading=1.6)
 for i in range(4):
     pic(s, BOTS[i], 400 + i * 76, 1300, 300)
-pic(s, "logo-chiaro.png", (1080 - 270) / 2, 1650, 230)
+lockup(s, 540, 1580, 190, 46, 19, PAPER, "A2968A", "c")
 
 story.save("export/tavole-story-1080x1920.pptx")
 

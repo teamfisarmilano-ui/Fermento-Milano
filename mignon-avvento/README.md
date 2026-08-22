@@ -20,9 +20,7 @@ Le sezioni 1–4 sono sviluppate nella Direzione A.
 
 ## Palette
 
-Ricavata dal logo ufficiale **Mignon.Wine — le più piccole** (Google Slides
-"ME logo"), estratto a 2000×2000 con sfondo trasparente. Da quel file sono
-ricavati gli asset in `logo*.png` e `bottiglia-*.png`:
+Ricavata dal marchio Mignon Experience:
 
 | | |
 |---|---|
@@ -46,10 +44,17 @@ tipologia di vino, nomi delle etichette.
 
 | File | Uso |
 |---|---|
-| `logo.png` | logo completo, per fondi chiari |
-| `logo-chiaro.png` | stesso logo con il logotipo in avorio, per fondi scuri |
-| `bottiglia-rossa/arancio/viola/gialla.png` | i quattro segni-bottiglia isolati dal marchio |
-| `logo-src/image1.png` | originale estratto, intatto |
+| `bottiglie.png` | le quattro bottiglie del marchio, distanze e sfalsamento originali |
+| `bottiglia-rossa/arancio/viola/gialla.png` | le stesse, isolate, per le caselle del calendario |
+| `logo-src/image1.png` | file di partenza, intatto |
+
+Il marchio nelle tavole è **ricostruito**: le bottiglie sono l'immagine
+originale, "Mignon Experience" e "le più piccole" sono testo vivo in
+Montserrat (700 e 300). I due file Google Slides forniti contengono la stessa
+immagine (`md5` identico) e portano il vecchio logotipo Mignon.Wine, quindi il
+logotipo attuale non era disponibile. `mignonexperience.com` e il dominio di
+download di Canva sono bloccati dalla policy di rete della sessione. Con il
+file ufficiale, la sostituzione è immediata.
 
 ## Esportazioni
 

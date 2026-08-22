@@ -10,7 +10,7 @@ const TMP = resolve('export/.tmp')
 mkdirSync(OUT, { recursive: true })
 mkdirSync(TMP, { recursive: true })
 
-for (const f of ['logo.png', 'logo-chiaro.png', 'bottiglia-rossa.png', 'bottiglia-arancio.png', 'bottiglia-viola.png', 'bottiglia-gialla.png']) copyFileSync(f, join(TMP, f))
+for (const f of ['bottiglie.png', 'bottiglia-rossa.png', 'bottiglia-arancio.png', 'bottiglia-viola.png', 'bottiglia-gialla.png']) copyFileSync(f, join(TMP, f))
 const canvas = JSON.parse(readFileSync('canvas.json', 'utf8'))
 const FONTS = readFileSync(join(TMP, 'fonts.css'), 'utf8')
 
