@@ -20,8 +20,9 @@ Le sezioni 1–4 sono sviluppate nella Direzione A.
 
 ## Palette
 
-Ricavata dal logo Mignon Experience (`logo mignon experience ME.pdf`, Canva),
-riprodotto nelle tavole come marchio in SVG:
+Ricavata dal logo ufficiale **Mignon.Wine — le più piccole** (Google Slides
+"ME logo"), estratto a 2000×2000 con sfondo trasparente. Da quel file sono
+ricavati gli asset in `logo*.png` e `bottiglia-*.png`:
 
 | | |
 |---|---|
@@ -40,6 +41,28 @@ Cormorant Garamond + Mulish (dir. C).
 Nel copy sono lasciati fra parentesi quadre: numero di cantine, formato in ml
 delle mignon, prezzo del cofanetto, data limite ordine, ripartizione per
 tipologia di vino, nomi delle etichette.
+
+## Asset del marchio
+
+| File | Uso |
+|---|---|
+| `logo.png` | logo completo, per fondi chiari |
+| `logo-chiaro.png` | stesso logo con il logotipo in avorio, per fondi scuri |
+| `bottiglia-rossa/arancio/viola/gialla.png` | i quattro segni-bottiglia isolati dal marchio |
+| `logo-src/image1.png` | originale estratto, intatto |
+
+## Esportazioni
+
+`render.mjs` renderizza le tavole con Chromium incorporando i font
+(`fonts.mjs` li scarica una volta sola). `pptx_slides.py` ricostruisce le
+tavole come PPTX nativi, `svg_build.py` converte i PDF in SVG vettoriali.
+
+| Formato | Cartella | Testo modificabile |
+|---|---|---|
+| PNG alla misura reale | `export/` | no |
+| PDF vettoriale | `export/` | sì |
+| SVG | `export/svg/` | sì |
+| PPTX (3 file, uno per formato) | `export/` | sì |
 
 ## Versioni Canva
 

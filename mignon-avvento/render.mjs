@@ -1,6 +1,6 @@
 // Converte le tavole .dc.html in HTML autonomo e le renderizza con Chromium
 // in PNG (bitmap alla dimensione reale) e PDF (testo vettoriale).
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync } from 'node:fs'
 import { execFileSync } from 'node:child_process'
 import { join, resolve } from 'node:path'
 
@@ -10,6 +10,7 @@ const TMP = resolve('export/.tmp')
 mkdirSync(OUT, { recursive: true })
 mkdirSync(TMP, { recursive: true })
 
+for (const f of ['logo.png', 'logo-chiaro.png', 'bottiglia-rossa.png', 'bottiglia-arancio.png', 'bottiglia-viola.png', 'bottiglia-gialla.png']) copyFileSync(f, join(TMP, f))
 const canvas = JSON.parse(readFileSync('canvas.json', 'utf8'))
 const FONTS = readFileSync(join(TMP, 'fonts.css'), 'utf8')
 
