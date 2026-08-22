@@ -11,10 +11,13 @@ mkdirSync(OUT, { recursive: true })
 mkdirSync(TMP, { recursive: true })
 
 const canvas = JSON.parse(readFileSync('canvas.json', 'utf8'))
+const FONTS = readFileSync(join(TMP, 'fonts.css'), 'utf8')
 
 function standalone(file) {
   const src = readFileSync(file, 'utf8')
   const helmet = (src.match(/<helmet>([\s\S]*?)<\/helmet>/) || [, ''])[1]
+    // il <link> a Google Fonts diventa il CSS incorporato: niente rete, resa deterministica
+    .replace(/<link[^>]+fonts\.googleapis\.com[^>]*>/g, `<style>${FONTS}</style>`)
   const body = (src.match(/<x-dc>([\s\S]*?)<\/x-dc>/) || [, ''])[1]
     .replace(/<helmet>[\s\S]*?<\/helmet>/, '')
   return `<!doctype html><html><head><meta charset="utf-8">${helmet}
