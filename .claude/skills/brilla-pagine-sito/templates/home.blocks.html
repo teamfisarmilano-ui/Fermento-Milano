@@ -1,0 +1,121 @@
+<!-- wp:cover {"url":"{{URL_HERO_DESKTOP}}","dimRatio":20,"minHeight":80,"minHeightUnit":"vh","contentPosition":"center left","align":"full"} -->
+<div class="wp-block-cover alignfull has-custom-content-position is-position-center-left" style="min-height:80vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-20 has-background-dim"></span><img class="wp-block-cover__image-background" alt="{{ALT_HERO: tre collanine Brilla in uno scenario ...}}" src="{{URL_HERO_DESKTOP}}" data-object-fit="cover"/><div class="wp-block-cover__inner-container">
+
+<!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">{{TITOLO_HERO}}</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>{{SOTTOTITOLO_HERO}}</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="/negozio/">Scopri le collanine</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+</div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">I più amati</h2>
+<!-- /wp:heading -->
+
+<!-- wp:shortcode -->
+[products ids="{{ID_CHAMPAGNE}},{{ID_SPRITZ}},{{ID_BAROLO}}" columns="3" orderby="post__in"]
+<!-- /wp:shortcode -->
+
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Tutte le collanine</h3>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"brilla-carousel","layout":{"type":"default"}} -->
+<div class="wp-block-group brilla-carousel">
+<!-- wp:shortcode -->
+[products limit="12" orderby="date" exclude="{{ID_CHAMPAGNE}},{{ID_SPRITZ}},{{ID_BAROLO}}"]
+<!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">{{TITOLO_STAGIONALE, es. Edizione Halloween}}</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"className":"brilla-carousel","layout":{"type":"default"}} -->
+<div class="wp-block-group brilla-carousel">
+<!-- wp:shortcode -->
+[products category="{{SLUG_CATEGORIA_STAGIONALE}}" limit="12"]
+<!-- /wp:shortcode -->
+</div>
+<!-- /wp:group -->
+
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Le nostre collezioni</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns">
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><a href="/categoria-prodotto/{{SLUG_COLLEZIONE_1}}/"><img src="{{URL_COLLEZIONE_1}}" alt="{{ALT_COLLEZIONE_1}}"/></a></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">{{COLLEZIONE_1}}</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">{{RIGA_COLLEZIONE_1}}</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><a href="/categoria-prodotto/{{SLUG_COLLEZIONE_2}}/"><img src="{{URL_COLLEZIONE_2}}" alt="{{ALT_COLLEZIONE_2}}"/></a></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">{{COLLEZIONE_2}}</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">{{RIGA_COLLEZIONE_2}}</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:image {"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><a href="/categoria-prodotto/{{SLUG_COLLEZIONE_3}}/"><img src="{{URL_COLLEZIONE_3}}" alt="{{ALT_COLLEZIONE_3}}"/></a></figure>
+<!-- /wp:image -->
+<!-- wp:heading {"textAlign":"center","level":3} -->
+<h3 class="wp-block-heading has-text-align-center">{{COLLEZIONE_3}}</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">{{RIGA_COLLEZIONE_3}}</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:column -->
+
+</div>
+<!-- /wp:columns -->
+
+</div>
+<!-- /wp:group -->

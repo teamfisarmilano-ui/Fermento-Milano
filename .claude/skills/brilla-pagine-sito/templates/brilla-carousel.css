@@ -1,0 +1,21 @@
+/* Carosello senza JS per shortcode WooCommerce.
+   Incollare in Aspetto → Personalizza → CSS aggiuntivo. */
+.brilla-carousel .woocommerce ul.products {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 12px;
+  margin: 0;
+}
+.brilla-carousel .woocommerce ul.products li.product {
+  flex: 0 0 66%;            /* ~1,5 card su mobile */
+  max-width: none;
+  width: auto;
+  margin: 0;
+  scroll-snap-align: start;
+}
+@media (min-width: 600px)  { .brilla-carousel .woocommerce ul.products li.product { flex-basis: 40%; } }
+@media (min-width: 960px)  { .brilla-carousel .woocommerce ul.products li.product { flex-basis: 24%; } }
